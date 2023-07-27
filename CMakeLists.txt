@@ -138,6 +138,7 @@ if (BUILD_PYTHON)
       "--with-python=${SCI_PYTHON_EXE}"
       "--with-python-root=${SCI_PYTHON_ROOT}"
       "--with-python-version=${SCI_PYTHON_VERSION_SHORT}"
+      "-lboost_numpy"
     )
     configure_file(user-config.jam.mac.in ${CMAKE_CURRENT_SOURCE_DIR}/tools/build/src/user-config.jam @ONLY)
   endif()
